@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>test</title>
+  </head>
+  <body>
+    1111
+    <script type="text/javascript" src="https://cdn.bootcss.com/axios/0.16.2/axios.js"></script>
+    <script type="text/javascript" src="https://cdn.bootcss.com/es6-promise/4.1.1/es6-promise.auto.js"></script>
+    <!-- <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-ajaxtransport-xdomainrequest/1.0.4/jQuery.XDomainRequest.js"></script> -->
+
+  </body>
+</html>
+<script>
+// jQuery.support.cors = true;
+// $.ajax({
+//   url: 'http://wxapi.yifucj.com/api/User/Login',
+//   data: 'this is data being posted to the server',
+//   contentType: 'text/plain',
+//   type: 'POST',
+//   dataType: 'json'
+// }).done(function(data) {
+//   console.log(data);
+// });
+// axios({
+//   method: 'post',
+//   url: 'http://wxapi.yifucj.com/api/User/Login',
+//   data: 'username=value1&password=value2&type=0',
+//   headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+// })
+// .then(function (response) {
+//   console.log(response);
+// })
+// .catch(function (error) {
+//   console.log(error);
+// });
+var xdr = new XDomainRequest(); // Use Microsoft XDR
+xdr.contentType = 'text/plain';
+xdr.open('post', "http://wxapi.yifucj.com/api/User/Login");
+// var postData = encodeURI(JSON.stringify({user:123}));
+xdr.onload = function () {
+    console.log(xdr.responseText)
+};
+
+xdr.onerror = function(error) {
+  console.log(error)
+    _result = false;
+};
+
+xdr.send("username=value1&password=value2&type=0");
+</script>

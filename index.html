@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE, chrome=1" >
+    <title>一富财经—打造中国最靠谱的投资者教育平台,股市直播,股票交流</title>
+    <meta content="一富财经，股市直播，股票，股票入门" name="keywords" />
+    <meta content="一富财经致力于打造中国最靠谱的的投资者教育平台,为广大股民提供股票入门知识、股票行情交流互动、股民炒股入门学习的绝佳场所，是中国最具价值的股票交流门户。,一富财经网(www.yifucj.com)" name="description" />
+    <link rel="shortcut icon" href="http://www.yifucj.com/favicon.ico" mce_href="http://www.yifucj.com/favicon.ico" type="image/x-icon"/>
+    <!--判断浏览器版本过低提示弹窗样式-->
+    <style type="text/css">
+    	.low_explorer_wrap { position: fixed; width: 100%; height: 100%; top: 0; left: 0; background: rgba(0,0,0,0.3); display: none; }
+    	.low_inner_content { width: 650px; height: 450px; background: #FEFFFF; position: absolute; left: 50%; top: 50%; margin-left: -325px; margin-top: -225px;}
+    	.low_inner_content_top { overflow: hidden; padding-top: 12px; padding-right: 12px;}
+    	.low_inner_content_top_i { font-size: 18px;}
+			.low_inner_content_detail { }
+			.low_inner_content_detail_img { margin: 0 auto; display: block;}
+			.low_inner_content_bottom { }
+    	.low_inner_content_bottom_text { line-height: 48px; height: 48px; text-align: center; font-size: 14px; color: #666666;}
+    	.low_inner_content_bottom_img_wrap { text-align: center;}
+    </style>
+    <link rel="shortcut icon" href="http://www.yifucj.com/favicon.ico" type="image/x-icon"/>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <!-- 营销qq -->
+    <script charset="utf-8" src="http://wpa.b.qq.com/cgi/wpa.php"></script>
+	<!-- 恶心的编辑器 -->
+    <script type="text/javascript" src="http://static.yifucj.com/jquery.js"></script>
+  	<script type="text/javascript" src="http://static.yifucj.com/xheditor/xheditor-1.2.1.min.js"></script>
+  	<script type="text/javascript" src="http://static.yifucj.com/xheditor/xheditor_lang/zh-cn.js"></script>
+    <!-- 分享bshare -->
+  	<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#uuid=5c74371e-5857-486e-8263-8e74d342b7e5"></script>
+    <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC1.js"></script>
+    <!-- 低版本提示 -->
+    <div id="low_explorer_wrap" class="low_explorer_wrap">
+    		<div class="low_inner_content">
+    			<div class="low_inner_content_top"><span id="low_close" style="float: right; cursor: pointer;"><i class="low_inner_content_top_i icon iconfont icon-chahao"></i></span></div>
+    			<div class="low_inner_content_detail">
+    				<img  class="low_inner_content_detail_img" src="/static/img/low_explorer.jpg"/>
+    			</div>
+    			<div class="low_inner_content_bottom">
+    					<p class="low_inner_content_bottom_text">您还可以选择我们推荐的浏览器，点击图标将转到相应下载页</p>
+    					<p class="low_inner_content_bottom_img_wrap">
+    						<a target="_blank" href="http://rj.baidu.com/soft/detail/14744.html?ald" style="margin-right: 62px; overflow: hidden; display: inline-block;" href=""><img src="/static/img/chrome.jpg"/></a>
+    						<a target="_blank" href="http://rj.baidu.com/soft/detail/11843.html" style="display: inline-block;" ><img src="/static/img/firefox.jpg"/></a>
+    					</p>
+    			</div>
+    		</div>
+    </div>
+    <script>
+    	$(function(){
+
+    		function myBrowser(){
+				    var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串
+				    var isOpera = userAgent.indexOf("Opera") > -1; //判断是否Opera浏览器
+				     var isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1 && !isOpera; //判断是否IE浏览器
+				     if (isIE) {
+				        var IE5 = IE55 = IE6 = IE7 = IE8 = false;
+				        var reIE = new RegExp("MSIE (\\d+\\.\\d+);");
+				        reIE.test(userAgent);
+				        var fIEVersion = parseFloat(RegExp["$1"]);
+				        IE55 = fIEVersion == 5.5;
+				        IE6 = fIEVersion == 6.0;
+				        IE7 = fIEVersion == 7.0;
+				        IE8 = fIEVersion == 8.0;
+				        if (IE55) {
+				            return "IE55";
+				        }
+				        if (IE6) {
+				            return "IE6";
+				        }
+				        if (IE7) {
+				            return "IE7";
+				        }
+				        if (IE8) {
+				            return "IE8";
+				        }
+				    }
+				}
+				if( myBrowser() == 'IE55' ||  myBrowser() == 'IE6' ||  myBrowser() == 'IE7' ||  myBrowser() == 'IE8'   ) {
+    			 $("#low_explorer_wrap").css("display", 'block')
+				}
+
+//  		浏览器版本过低的关闭事件
+    		$("#low_close").click(function(){
+    			 $("#low_explorer_wrap").css("display", 'none')
+    		})
+
+    	})
+
+      // baidu tongji
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?e3e69f2864f58bdd781a5b1b5df11e19";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+// room/room
+export const INIT_ROOM_ID = 'INIT_ROOM_ID'
+export const UPDATE_ROOM_JOINS = 'UPDATE_ROOM_JOINS'
+
+export const GET_ROOM_DATA_ING = 'GET_ROOM_DATA_ING'
+export const GET_ROOM_DATA_SUCCESS = 'GET_ROOM_DATA_SUCCESS'
+export const GET_ROOM_DATA_FAIL = 'GET_ROOM_DATA_FAIL'
+
+export const ADD_ROOM_MESSAGE = 'ADD_ROOM_MESSAGE'
+export const UPDATE_ROOM_MESSAGE = 'UPDATE_ROOM_MESSAGE'
+export const UP_ROOM_MESSAGE = 'UP_ROOM_MESSAGE'
+export const REMOVE_ROOM_MESSAGE = 'REMOVE_ROOM_MESSAGE'
+
+export const ADD_ROOM_COMMENT = 'ADD_ROOM_COMMENT'
+export const UPDATE_ROOM_COMMENT = 'UPDATE_ROOM_COMMENT'
+export const UP_ROOM_COMMENT = 'UP_ROOM_COMMENT'
+export const REMOVE_ROOM_COMMENT = 'REMOVE_ROOM_COMMENT'
+export const UPDATE_ROOM_DEL = 'UPDATE_ROOM_DEL'
+
+export const CLEAR_NEW_MESSAGE_NUM = 'CLEAR_NEW_MESSAGE_NUM'
+
+// room/goods
+export const GET_ROOM_GOODS_ING = 'GET_ROOM_GOODS_ING'
+export const GET_ROOM_GOODS_SUCCESS = 'GET_ROOM_GOODS_SUCCESS'
+export const GET_ROOM_GOODS_FAIL = 'GET_ROOM_GOODS_FAIL'
+
+// room/papers（纸条不会更新，只会删除新建）
+export const GET_ROOM_PAPERS_ING = 'GET_ROOM_PAPERS_ING'
+export const GET_ROOM_PAPERS_SUCCESS = 'GET_ROOM_PAPERS_SUCCESS'
+export const GET_ROOM_PAPERS_FAIL = 'GET_ROOM_PAPERS_FAIL'
+export const UPDATE_ROOM_PAPER = 'UPDATE_ROOM_PAPER'
+
+// views
+export const SET_CHAT_REPLY = 'SET_CHAT_REPLY'
+export const CANCEL_CHAT_REPLY = 'CANCEL_CHAT_REPLY'
+export const SET_LIVE_QUOTE = 'SET_LIVE_QUOTE'
+export const CANCEL_LIVE_QUOTE = 'CANCEL_LIVE_QUOTE'
+
+// views/encryptedViews
+export const GET_ENCRYTED_VIEW_ING = 'GET_ENCRYTED_VIEW_ING'
+export const GET_ENCRYTED_VIEW_SUCCESS = 'GET_ENCRYTED_VIEW_SUCCESS'
+export const GET_ENCRYTED_VIEW_FAIL = 'GET_ENCRYTED_VIEW_FAIL'
+export const UPDATE_ENCRYTED_VIEW = 'UPDATE_ENCRYTED_VIEW'
+export const UPDATE_ENCRYTED_VIEW_MONTH_GOLDS = 'UPDATE_ENCRYTED_VIEW_MONTH_GOLDS'
+
+// views/normalView
+export const GET_NORMAL_VIEW_ING = 'GET_NORMAL_VIEW_ING'
+export const GET_NORMAL_VIEW_SUCCESS = 'GET_NORMAL_VIEW_SUCCESS'
+export const GET_NORMAL_VIEW_FAIL = 'GET_NORMAL_VIEW_FAIL'
+export const UPDATE_NORMAL_VIEW = 'UPDATE_NORMAL_VIEW'
+export const REMOVE_NORMAL_VIEW = 'REMOVE_NORMAL_VIEW'
+
+// ads
+export const GET_ROOM_ADS = 'GET_ROOM_ADS'
+
+// history 
+export const SET_HISTORY_ROOM_DATA = 'SET_HISTORY_ROOM_DATA'
+export const UP_HISTORY_ROOM_MESSAGE = 'UP_HISTORY_ROOM_MESSAGE'
+
+// user/dialog
+export const OPEN_LOGIN_DIALOG = 'OPEN_LOGIN_DIALOG'
+export const CLOSE_LOGIN_DIALOG = 'CLOSE_LOGIN_DIALOG'
+
+// user
+export const LOGIN_ING = 'LOGIN_ING'
+export const LOGIN_SUCCESS = 'LOGIN_SUCCESS'
+export const LOGIN_FAIL = 'LOGIN_FAIL'
+
+// user/refresh_token
+export const REFRESH_TOKEN_ING = 'REFRESH_TOKEN_ING'
+export const REFRESH_TOKEN_SUCCESS = 'REFRESH_TOKEN_SUCCESS'
+export const REFRESH_TOKEN_FAIL = 'REFRESH_TOKEN_FAIL'
+
+// user/data
+export const GET_USER_DATA_ING = 'GET_USER_DATA_ING'
+export const GET_USER_DATA_SUCCESS = 'GET_USER_DATA_SUCCESS'
+export const GET_USER_DATA_FAIL = 'GET_USER_DATA_FAIL'
+export const GET_USER_CHANGE_DATA = 'GET_USER_CHANGE_DATA'
+
+// user/encryptedView
+export const UPDATE_USER_ENCRYPTED_VIEW = 'UPDATE_USER_ENCRYPTED_VIEW'
+
+//获取用户可变动数据
+
+//修改直播设置
+// 修改今日主题
+export const CHANGE_ROOM_TOPICNAME = 'CHANGE_ROOM_TOPICNAME'
+//room下的嘉宾
+//嘉宾列表
+export const GET_TEACHER_INVITE = 'GET_TEACHER_INVITE'
+//删除嘉宾
+export const REMOVE_TEACHER_INVITE = 'REMOVE_TEACHER_INVITE'
+//添加嘉宾
+export const ADD_TEACHER_INVITE = 'ADD_TEACHER_INVITE'
+//获取禁言用户列表
+export const GET_NO_SPEECH_LIST = 'GET_NO_SPEECH_LIST'
+//设置用户禁言(添加)
+export const ADD_NO_SPEECH_LIST = 'ADD_NO_SPEECH_LIST'
+//解除禁言用户
+export const UNADD_NO_SPEECH_LIST = 'UNADD_NO_SPEECH_LIST'
+
+
+//问答模块
+
+export  const GET_QUESTION_MYNUM = 'GET_QUESTION_MYNUM'
+
+export const GET_QUESTION_FREENUM = 'GET_QUESTION_FREENUM'
+
+export const TAB_CONTROL_VIEW = 'TAB_CONTROL_VIEW'
+
+
+//vip模块
+
+export const INIT_VIP_LIVE_DATA = 'INIT_VIP_LIVE_DATA'       //初始化vip模块直播页面数据
+export const INIT_VIP_RILI_DATA = 'INIT_VIP_RILI_DATA'       //负责vip模块直播页面的日历的选中日期
+export const SET_VIPCHAT_REPLY = 'SET_VIPCHAT_REPLY'         //vip的回复操作
+export const CANCEL_VIPCHAT_REPLY = 'CANCEL_VIPCHAT_REPLY'   //vip的取消回复操作
+export const SET_VIPLIVE_QUOTE = 'SET_VIPLIVE_QUOTE'         //vip的引用操作
+export const CANCEL_VIPLIVE_QUOTE = 'CANCEL_VIPLIVE_QUOTE'         //vip的取消引用操作
